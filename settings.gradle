@@ -1,0 +1,4 @@
+rootProject.name = 'dlsrb6342'
+
+include 'client'
+include 'server'
