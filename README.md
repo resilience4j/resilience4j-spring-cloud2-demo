@@ -1,4 +1,7 @@
 # resilience4j-spring-cloud2-demo
+
+**⚠️ resilience4j-spring-cloud2 is not released yet. It is [in progress](https://github.com/resilience4j/resilience4j/pull/550).**
+
 This demo shows how to use the fault tolerance library Resilience4j in a Spring Boot 2 application with Spring Cloud.
 
 * `client` module : spring-cloud-config-client.
