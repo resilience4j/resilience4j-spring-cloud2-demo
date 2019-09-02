@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../resilience4j" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../resilience4j-micronaut-demo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../resilience4j-spring-boot-demo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="PREVIEW" />
+        <entry key="$USER_HOME$/demo" value="PREVIEW" />
+        <entry key="$USER_HOME$/micronaut-examples" value="PREVIEW" />
+        <entry key="$USER_HOME$/resilience4j" value="PREVIEW" />
+        <entry key="$USER_HOME$/resilience4j-spring-boot-demo" value="PREVIEW" />
+        <entry key="$USER_HOME$/resilience4j-spring-boot2-demo" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="387" />
+    <option name="y" value="27" />
+    <option name="width" value="2103" />
+    <option name="height" value="1503" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
