@@ -1,4 +1,4 @@
-rootProject.name = 'dlsrb6342'
+rootProject.name = 'resilience4j-spring-cloud2-demo'
 
 include 'client'
 include 'server'
