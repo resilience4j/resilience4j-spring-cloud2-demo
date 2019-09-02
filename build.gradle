@@ -7,15 +7,15 @@ allprojects {
     apply plugin: 'java'
 
     group = 'io.github'
-    version = '0.0.1-SNAPSHOT'
+    version = '1.0.0-SNAPSHOT'
 
     ext {
         set('springCloudVersion', "Greenwich.SR2")
     }
 
     repositories {
+        maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }
         mavenCentral()
-        mavenLocal()
     }
 }
 
@@ -24,7 +24,7 @@ subprojects {
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
 
-    sourceCompatibility = '11'
+    sourceCompatibility = '8'
 
     dependencyManagement {
         imports {

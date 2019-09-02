@@ -1,4 +1,4 @@
-package io.github.dlsrb6342;
+package io.github.resilience4j;
 
 import java.util.Map;
 

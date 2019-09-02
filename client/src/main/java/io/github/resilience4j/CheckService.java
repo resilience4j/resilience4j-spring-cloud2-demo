@@ -1,5 +1,6 @@
-package io.github.dlsrb6342;
+package io.github.resilience4j;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import org.slf4j.Logger;
@@ -14,8 +15,6 @@ import io.github.resilience4j.retry.RetryRegistry;
 
 @Service
 public class CheckService {
-
-    private static final Logger log = LoggerFactory.getLogger(CheckController.class);
 
     public CheckService(BulkheadRegistry bulkheadRegistry,
                            ThreadPoolBulkheadRegistry threadPoolBulkheadRegistry,
@@ -36,13 +35,10 @@ public class CheckService {
     private final RetryRegistry retryRegistry;
 
     public Map<String, Number> check() {
-
-        return Map.of(
-                "Bulkhead maxConcurrentCalls", bulkheadRegistry.getDefaultConfig().getMaxConcurrentCalls(),
-                "TheadPollBulkhead maxThreadPoolSize", threadPoolBulkheadRegistry.getDefaultConfig().getMaxThreadPoolSize(),
-                "CircuitBreaker failureRateThreshold", circuitBreakerRegistry.getDefaultConfig().getFailureRateThreshold(),
-                "RateLimiter limitForPeriod", rateLimiterRegistry.getDefaultConfig().getLimitForPeriod(),
-                "Retry maxRetryAttempts", retryRegistry.getDefaultConfig().getMaxAttempts()
-        );
+        Map<String, Number> result = new HashMap<>();
+        result.put("Bulkhead maxConcurrentCalls", bulkheadRegistry.getDefaultConfig().getMaxConcurrentCalls());
+        result.put("CircuitBreaker failureRateThreshold", circuitBreakerRegistry.getDefaultConfig().getFailureRateThreshold());
+        result.put("RateLimiter limitForPeriod", rateLimiterRegistry.getDefaultConfig().getLimitForPeriod());
+        return result;
     }
 }
