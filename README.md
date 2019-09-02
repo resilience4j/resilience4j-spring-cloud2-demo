@@ -1,25 +1,23 @@
 # resilience4j-spring-cloud2-demo
 
 ## Setup
-If you want to use resilience4j with spring-cloud and make registries refreshable, add the Spring Cloud2 Starter of Resilience4j to your compile dependency. It makes your registries refreshable.
+If you want to use resilience4j with Spring Cloud Config, add the Spring Cloud2 Starter of Resilience4j to your compile dependency. 
 
-The module expects that `resilience4j-spring-boot2` is already provided at runtime.
 ```groovy
 repositories {
   jCenter()
 }
 
 dependencies {
-  compile "io.github.resilience4j:resilience4j-spring-boot2:${resilience4jVersion}"
   compile "io.github.resilience4j:resilience4j-spring-cloud2:${resilience4jVersion}"
 }
 ```
 
 ## Configuration
-The configuration is same with `resilience4j-spring-boot2`. You can configure registries and instances in spring-cloud-config server backend's `application.yml` config file or Spring Boot’s `application.yml` config file.
+The configuration is similar to `resilience4j-spring-boot2`. 
 
 ## Demo 
-Setup and usage in Spring Cloud 2 with Spring Boot 2 is demonstrated into a [demo](https://github.com/resilience4j/resilience4j-spring-cloud2-demo).
+Setup and usage in Spring Cloud 2 with Spring Boot 2 is demonstrated in this [demo](https://github.com/resilience4j/resilience4j-spring-cloud2-demo).
 
 There are two modules in demo. `server` module is spring-cloud-config server. It serves config files inside the `config` branch. `client` module is Spring Boot 2 application with spring-cloud-config.
 
