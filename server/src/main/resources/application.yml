@@ -8,3 +8,7 @@ spring:
         git:
           uri: https://github.com/resilience4j/resilience4j-spring-cloud2-demo
           default-label: config
+
+#spring.profiles.active: native
+#spring.cloud.config.server.native.searchLocations: file:///${user.home}/Documents/projects/config
+##spring.cloud.config.server.native.searchLocations: classpath:config/

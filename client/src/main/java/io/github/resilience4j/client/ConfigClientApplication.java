@@ -1,4 +1,4 @@
-package io.github.resilience4j;
+package io.github.resilience4j.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

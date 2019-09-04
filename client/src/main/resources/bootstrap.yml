@@ -2,5 +2,4 @@ spring:
   cloud:
     config:
       uri: http://localhost:8090
-      label: config
       fail-fast: true

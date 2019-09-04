@@ -1,4 +1,4 @@
-package io.github.resilience4j;
+package io.github.resilience4j.client;
 
 import java.util.HashMap;
 import java.util.Map;
