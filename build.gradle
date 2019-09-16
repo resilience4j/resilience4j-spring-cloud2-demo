@@ -7,14 +7,13 @@ allprojects {
     apply plugin: 'java'
 
     group = 'io.github'
-    version = '1.0.0-SNAPSHOT'
+    version = '1.0.0'
 
     ext {
         set('springCloudVersion', "Greenwich.SR2")
     }
 
     repositories {
-        maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }
         mavenCentral()
     }
 }
