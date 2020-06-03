@@ -4,7 +4,5 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-aop'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
 
-    implementation 'io.github.resilience4j:resilience4j-spring-cloud2:1.0.0-SNAPSHOT'
-
-    testImplementation 'io.projectreactor:reactor-test'
+    implementation 'io.github.resilience4j:resilience4j-spring-cloud2:1.5.0'
 }

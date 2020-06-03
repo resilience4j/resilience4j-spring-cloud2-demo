@@ -1,6 +1,6 @@
 plugins {
-    id 'org.springframework.boot' version '2.1.7.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.7.RELEASE'
+    id 'org.springframework.boot' version '2.3.0.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 }
 
 allprojects {
@@ -10,7 +10,7 @@ allprojects {
     version = '1.0.0'
 
     ext {
-        set('springCloudVersion', "Greenwich.SR2")
+        set('springCloudVersion', "Hoxton.SR5")
     }
 
     repositories {
