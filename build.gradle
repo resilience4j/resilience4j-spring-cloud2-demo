@@ -10,7 +10,7 @@ allprojects {
     version = '1.0.0'
 
     ext {
-        set('springCloudVersion', "Greenwich.SR2")
+        set('springCloudVersion', "Hoxton.SR5")
     }
 
     repositories {
